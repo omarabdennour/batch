@@ -22,7 +22,7 @@ The example at the top works with the h2 embedded database, you can just run it 
 
 I suspect there might be an issue with the pagination logic or some misconfiguration that causes the reader to skip the next page. I have reviewed the Spring Batch documentation and tried various configurations, but I couldn't identify the root cause of this behavior.
 
-I read the answer <a href="[https://www.w3schools.com](https://stackoverflow.com/questions/26509971/spring-batch-jpapagingitemreader-why-some-rows-are-not-read](https://stackoverflow.com/questions/26509971/spring-batch-jpapagingitemreader-why-some-rows-are-not-read)">here</a> before i write the question , but I can't find the solution for my case .
+I read the answer <a href="https://stackoverflow.com/questions/26509971/spring-batch-jpapagingitemreader-why-some-rows-are-not-read">here</a> before i write the question , but I can't find the solution for my case .
 
 Could someone please help me identify potential causes for this skipping behavior with the RepositoryItemReader? Any suggestions or insights would be greatly appreciated.
 
