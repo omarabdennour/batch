@@ -26,3 +26,4 @@ I read the answer <a href="https://stackoverflow.com/questions/26509971/spring-b
 
 Could someone please help me identify potential causes for this skipping behavior with the RepositoryItemReader? Any suggestions or insights would be greatly appreciated.
 
+email : oabdennour@gmail.com
