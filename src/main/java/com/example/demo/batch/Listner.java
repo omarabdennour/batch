@@ -21,8 +21,8 @@ public class Listner implements JobExecutionListener{
 	    public void beforeJob(JobExecution jobExecution) {
 	    	System.out.println("-----------------------------");
 	    	System.out.println("Before Job ...");
-	    	System.out.println("Disabled clients  -> " + clientRepository.countByIsProcessed(false) );
-	    	System.out.println("Enabled clients  -> " + clientRepository.countByIsProcessed(true) );
+	    	System.out.println("Unprocessed clients  -> " + clientRepository.countByIsProcessed(false) );
+	    	System.out.println("Processed clients  -> " + clientRepository.countByIsProcessed(true) );
 	    	System.out.println("-----------------------------");
 	    	;
 	        
@@ -34,8 +34,8 @@ public class Listner implements JobExecutionListener{
 	    public void afterJob(JobExecution jobExecution) {
 	    	System.out.println("-----------------------------");
 	    	System.out.println("After Job ...");
-	    	System.out.println("Disabled clients  -> " + clientRepository.countByIsProcessed(false) );
-	    	System.out.println("Enabled clients  -> " + clientRepository.countByIsProcessed(true) );
+	    	System.out.println("Unprocessed clients  -> " + clientRepository.countByIsProcessed(false) );
+	    	System.out.println("Processed clients  -> " + clientRepository.countByIsProcessed(true) );
 	    	System.out.println("-----------------------------");
 	    }
 
