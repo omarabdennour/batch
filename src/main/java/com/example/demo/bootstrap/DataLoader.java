@@ -35,20 +35,29 @@ public class DataLoader implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		loaddata();
+		
+		loaddata(); 
 		launchJob();
 	}
 
 	void loaddata() {
 		int index = 0;
+		
+		log.warn("! load Data Start ...");
 		while (index < 10000) {
 
 			String name = String.format("%s%s", "name", index);
 			String email = String.format("%s%s", name, "@domain.com");
 
-			clientRepository.save(Client.builder().name(name).email(email).isEnabled(false).build());
+			clientRepository.save(Client.builder()
+										.name(name)
+										.email(email)
+										.isEnabled(false)
+										.isProcessed(false)
+										.build());
 			index = index + 1;
 		}
+		log.warn("! load Data Finish ...");
 	}
 	
 	

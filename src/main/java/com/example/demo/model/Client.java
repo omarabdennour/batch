@@ -33,5 +33,8 @@ public class Client extends BaseEntity{
 	
 	private boolean isEnabled ;
 	
+	private boolean isProcessed ;
+	
+	
 
 }

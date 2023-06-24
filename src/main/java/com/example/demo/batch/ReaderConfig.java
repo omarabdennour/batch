@@ -16,6 +16,7 @@ import com.example.demo.model.Client;
 import com.example.demo.repository.ClientRepository;
 
 
+
 @Service
 @StepScope
 public class ReaderConfig {
@@ -34,10 +35,10 @@ public class ReaderConfig {
 		return new RepositoryItemReaderBuilder<Client>()
                 .name("my-reader")
                 .repository(clientRepository)
-                .methodName("findByIsEnabled")
+                .methodName("findAllByIsEnabled")
                 .arguments(args)
                 .sorts(Collections.singletonMap("createdDate", Sort.Direction.ASC))
-                .pageSize(10)
+                .pageSize(100) 
                 .saveState(true)
                 .build();
 	}

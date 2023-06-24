@@ -15,7 +15,7 @@ public class Processor implements ItemProcessor<Client, Client> {
 	@StepScope
 	public Client process(Client item) throws Exception {
 
-		Client client = item.toBuilder().isEnabled(true).build();
+		Client client = item.toBuilder().isProcessed(true).build();
 		client.setId(item.getId());
 		return client;
 	}

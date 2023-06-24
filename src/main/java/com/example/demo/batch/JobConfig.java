@@ -19,7 +19,7 @@ public class JobConfig {
 	private final JobRepository jobRepository;
 	
 	@Bean("myJob")
-    Job clearListJob(@Qualifier("myStep") 				 Step 				  step,
+    Job clearListJob(@Qualifier("myStep") 	  Step 	               step,
     				 @Qualifier("myListener") JobExecutionListener listener) {
     	
         return new JobBuilder("my-job", jobRepository)
