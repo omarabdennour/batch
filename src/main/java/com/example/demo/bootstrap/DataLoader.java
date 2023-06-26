@@ -44,7 +44,7 @@ public class DataLoader implements CommandLineRunner {
 		int index = 0;
 		
 		log.warn("! load Data Start ...");
-		while (index < 10000) {
+		while (index < 100000) {
 
 			String name = String.format("%s%s", "name", index);
 			String email = String.format("%s%s", name, "@domain.com");
